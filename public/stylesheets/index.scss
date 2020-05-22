@@ -177,7 +177,10 @@ section {
     &.sub {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      border-bottom: 2px solid #0198e1;
+
+      .img-container {
+        max-height: 250px;
+      }
 
       .copy-container {
         padding: 16px;
@@ -189,7 +192,6 @@ section {
     }
     
     img {
-      border-top: 2px solid rgba(1, 152, 225, 0.9);
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -236,22 +238,6 @@ section {
           font-size: 14px;
           display: block;
         }
-      }
-    }
-  
-    a.primary-btn {
-      font-size: 16px;
-      display: inline-flex;
-      align-items: center;
-      box-sizing: content-box;
-      padding: 8px;
-      background-color: rgba(1, 152, 225, 0.9);
-      color: #FFFFFF;
-      border-radius: 8px;
-      text-decoration: none;
-      
-      &:hover {
-        background-color: rgba(1, 152, 225, 1);
       }
     }
   }
@@ -332,6 +318,16 @@ section {
 
 }
 
+// Player
+#player-bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  img {
+    width: 100%;
+  }
+}
+
 // About
 iframe {width:100%;height:100%;}
 
@@ -355,6 +351,22 @@ footer {
     background-color: rgba(1, 152, 225, 0.9);
     opacity: 0.9;
     z-index: 10;
+  }
+}
+
+a.primary-btn {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 8px;
+  background-color: rgba(1, 152, 225, 0.9);
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: rgba(1, 152, 225, 1);
   }
 }
 
