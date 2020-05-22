@@ -284,7 +284,7 @@ section {
 
 #team .team-container {
   padding-bottom: 32px;
-  padding-top: 16px;
+  padding-top: 32px;
   border-bottom: 1px solid #0198e1;
 }
 
@@ -312,6 +312,7 @@ section {
 
 #team .player-grid .player {
   border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 #team .player-grid .player .image-container {

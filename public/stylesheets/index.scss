@@ -202,7 +202,7 @@ section {
     }
 
     p {
-      color: rgb(113, 113, 113);;
+      color: rgb(113, 113, 113);
     }
   }
 }
@@ -271,7 +271,7 @@ section {
 
   .team-container {
     padding-bottom: 32px;
-    padding-top: 16px;
+    padding-top: 32px;
     border-bottom: 1px solid #0198e1;
 
     &:first-of-type {
@@ -296,6 +296,7 @@ section {
 
     .player {
       border-radius: 8px;
+      margin-bottom: 16px;
 
       .image-container {
         margin-bottom: 8px;
