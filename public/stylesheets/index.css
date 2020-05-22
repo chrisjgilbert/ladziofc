@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-size: 21px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../images/live_shot.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 152, 225, 0.9);
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.logo {
+  height: 100%;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo span {
+  padding: 8px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul a, nav ul a:active, nav ul a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.inner-content {
+  position: relative;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 88px;
+  padding: 16px;
+  max-width: 1080px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#news article {
+  margin-bottom: 32px;
+}
+
+#news article:last-of-type {
+  margin-bottom: 16px;
+}
+
+#news article.sub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #0198e1;
+}
+
+#news article.sub .copy-container {
+  padding: 8px;
+}
+
+#news article img {
+  border-top: 2px solid rgba(1, 152, 225, 0.9);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#news article h2 {
+  margin: 16px 0 8px 0;
+}
+
+#news article p {
+  color: #5a5a5a;
+}
+
+#sidebar {
+  height: 100%;
+}
+
+#sidebar div {
+  margin-bottom: 16px;
+}
+
+#sidebar h2 {
+  margin-bottom: 12px;
+}
+
+#sidebar .matches ol li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#sidebar .matches ol li:last-of-type {
+  margin-bottom: 16px;
+}
+
+#sidebar .matches ol li span {
+  color: #5a5a5a;
+  font-weight: lighter;
+  font-size: 14px;
+  display: block;
+}
+
+#sidebar .matches a.primary-btn {
+  font-size: 16px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 8px;
+  background-color: rgba(1, 152, 225, 0.9);
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#sidebar .matches a.primary-btn:hover {
+  background-color: #0198e1;
+}
+
+#sidebar .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sidebar .social ul li a {
+  font-size: 32px;
+  color: rgba(1, 152, 225, 0.9);
+  margin-right: 12px;
+}
+
+#sidebar .social ul li a:hover {
+  color: #0198e1;
+}
+
+#sidebar p {
+  font-size: 12px;
+}
+
+#team h2 {
+  margin-bottom: 16px;
+}
+
+#team .team-container {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: 2px solid #0198e1;
+}
+
+#team .team-container:first-of-type {
+  padding-top: 0;
+}
+
+#team .team-container:last-of-type {
+  border: none;
+}
+
+#team .player-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+#team .player-grid .player {
+  border-radius: 8px;
+}
+
+#team .player-grid .player .image-container {
+  margin-bottom: 8px;
+}
+
+#team .player-grid .player .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#team .player-grid .player .info-container .squad-number {
+  color: #5a5a5a;
+  display: block;
+}
+
+#team .player-grid .player .info-container .last-name {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #0198e1;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
